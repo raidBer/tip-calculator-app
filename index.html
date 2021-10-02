@@ -5,40 +5,84 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="styles.css">
   <title>Frontend Mentor | Tip calculator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
-  Bill
+  <div class="logo"><img src="images/logo.svg" alt="SPLITTER"></div>
+  <div class="main-container">
+    <div class="left">
+      <div class="small-left-container">
+        <div>Bill</div>
+        <form class="wide-form" action="" id="b">
+          <div><img src="images/icon-dollar.svg"></div>
+          <input id="bill" type="number" placeholder="0" class="no-outline">
+        </form>
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
+      </div>
+      <div class="small-left-container">
+        <div>Select Tip %</div>  
+          <div class="tips">
+            <div class="tip">5%</div>
+            <div class="tip">10%</div>
+            <div class="tip">15%</div>
+            <div class="tip">25%</div>
+            <div class="tip">50%</div>
+            <div class="tip">
+              <div>
+                <form action="">
+                  <input id="custom" type="number" name="tip-custom" placeholder="Custom" class="no-outline" >
+                </form> 
+              </div>  
+          </div>         
+        </div>  
+      </div>
 
-  Number of People
+      <div class="small-left-container">
+        <div>Number of People <span id="error" class="e">Can't be zero</span></div>
+        <form class="wide-form" action="" id="p">
+          <div><img src="images/icon-person.svg"></div>
+          <input id="people" type="number" placeholder="0" class="no-outline">
+        </form>
+      </div>
+      
+    </div>
+      
+    <div class="right">
 
-  Tip Amount
-  / person
+      <table>
+        <tr>
+          <td class="big">Tip Amount</td>
+          <th rowspan="2" class="money" id="tipAmount">0.00$</th>       
+        </tr>
+        <tr>
+          <td class="small">/ person</td> 
+        </tr>  
+      </table>
 
-  Total
-  / person
+      <table>
+        <tr>
+          <td class="big"> Total</td>
+          <th rowspan="2" class="money" id="total">0.00$</th>       
+        </tr>
+        <tr>
+          <td class="small">/ person </td> 
+        </tr>    
+      </table>
 
-  Reset
-  
+      <div></div>
+
+      <button class="reset-button">RESET</button>     
+    </div>
+  </div>
+
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Raid Ber</a>.
   </div>
+
+  <script src="app.js"></script>
 </body>
 </html>

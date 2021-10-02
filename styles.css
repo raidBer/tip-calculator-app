@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+body
+{
+    padding: 0;
+    margin: 0;
+    background-color: hsl(185, 41%, 84%);
+    font-family: 'Space Mono';
+    font-size: 24px;
+}
+
+.logo
+{
+display: flex;
+align-items: center;
+justify-content: center;
+padding-top: 60px;
+}
+
+.main-container
+{
+    background-color: hsl(0, 0%, 100%);
+    width: 65%;
+    border-radius: 25px;
+    margin: 40px auto;
+    box-shadow: 1px 1px 50px hsl(184, 14%, 56%);
+    height: 430px;
+    display: flex;
+    justify-content:stretch; 
+    align-items: center;
+}
+
+.main-container>div
+{
+    flex-basis: 100%;
+}
+.right
+{
+    background-color: hsl(183, 100%, 15%);
+    height: 85%;
+    border-radius: 20px;
+    margin: auto 30px auto 0px; 
+ }
+
+table
+{
+    margin: 30px auto 0px auto;
+    width: 100%;
+}
+
+.big
+{
+    color: white;
+    font-size: 16px;
+    padding-left: 35px;
+}
+
+.small
+{
+    color: hsl(184, 14%, 56%);
+    font-size: 15px;
+    padding-left: 40px;
+    padding-top: 0px;
+}
+
+.money
+{
+    width: 20px;
+    font-size: 40px;
+    font-weight: 800;
+    color: hsl(172, 67%, 45%);
+    padding-right: 30px;
+}
+
+.reset-button
+{
+    width: 80%;
+    height: 50px;
+    margin: 100px auto auto auto;
+    border-radius: 7px;
+    background:  hsl(172, 67%, 45%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    color: hsl(183, 100%, 15%);
+    border: none;
+    font-family: 'Space Mono';
+    font-size: 24px;
+}
+.reset-button:hover
+{
+    cursor: pointer;
+    background-color:hsl(185, 41%, 84%) ;
+    transition: all 0.3s ease;
+}
+/* left area */
+.left
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto 0px auto 30px; 
+    height: 85%;
+    
+}
+.small-left-container
+{
+    font-size: 16px;
+    color: hsl(183, 100%, 15%);
+    width: 100%;
+}
+#error
+{
+    display: none;
+}
+.e
+{
+    color: rgb(206, 0, 0);
+    margin-left: 80px;
+}
+.wide-form
+{
+    display: flex;
+    align-items: center;
+    width: 85%;
+    height: 50px;
+    border-radius: 5px;
+    margin-left: 5px;  
+    background: hsl(189, 41%, 97%);
+    padding: 0px 10px;
+}
+.no-outline:focus
+{
+    outline: none;
+}       
+
+.wide-form input
+{
+    background:hsl(189, 41%, 97%) ;
+    width: 100%;
+    text-align: right;
+    font-family: 'Space Mono';
+    font-size: 24px;
+    font-weight: 500;
+    border: none;
+}
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.tips
+{
+    height: 80%;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto 40px auto 5px;
+}
+
+.tip
+{
+    text-align: center;
+    border-radius: 7px;
+    height: 40px;
+    width: 28%;
+    background: hsl(183, 100%, 15%);
+    color: white;
+    font-size: 23px;
+    margin: 5px auto;
+    transition: all 0.3s ease;
+}
+
+.tip:hover
+{
+    cursor: pointer;
+    background-color:hsl(185, 41%, 84%) ;
+    color: hsl(183, 100%, 15%);
+    transition: all 0.3s ease;
+}
+
+
+#custom
+{
+    margin: 0px;
+    text-align: center ;
+    height: 40px;
+    width: 100%;
+    font-family: 'Space Mono';
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    background: hsl(189, 41%, 97%);
+    color: hsl(183, 100%, 15%);
+    z-index: 100;
+}
+#custom:hover
+{
+    cursor: pointer;
+}
+
+.clicked
+{
+    background:hsl(185, 41%, 84%);
+    color:hsl(183, 100%, 15%);
+}
+
+@media screen and (max-width: 1040px) {
+    .main-container
+    { 
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .main-container
+    { 
+        width: 90%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: auto;
+        padding: 20px;
+    }
+    .left
+    {
+        display: flex;
+        margin: 50px 0px 50px 30px; 
+        width: 95%;        
+    }
+    .small-left-container
+    {
+        font-size: 24px;
+        color: hsl(183, 100%, 15%);
+        margin: 0px auto 20px auto;
+    }
+    
+    .tip
+    {
+        height: 60px;
+        width: 45%;
+        font-weight: 800;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px auto;
+    }
+    #custom
+    {
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .right
+    {
+        margin: 0px;
+        width: 100%;
+    }
+    .big
+    {
+        padding-left: 60px;
+    }
+    .small
+    {
+        padding-left: 60px;
+    }
+    .money
+    {
+        padding-right: 70px;
+    }
+    .reset-button
+    {     
+        height: 70px;
+        width: 85%;
+        margin: 50px auto 30px auto;
+    }
+    .attribution
+    {
+        font-size: 16px;
+    }
+}
+
