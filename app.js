@@ -91,13 +91,14 @@ document.querySelector(".tips div:nth-child(1)").addEventListener("click", e => 
     customInput.style.border="none";
     e.target.classList.add("clicked");
     update();
-    
+    document.querySelector('#custom').value='';
 });
 document.querySelector(".tips div:nth-child(2)").addEventListener("click", e => {
     tip=10;
     removeHighlight();
     customInput.style.border="none";
     e.target.classList.add("clicked");
+    document.querySelector('#custom').value='';
     update();
 });
 document.querySelector(".tips div:nth-child(3)").addEventListener("click", e => {
@@ -105,6 +106,7 @@ document.querySelector(".tips div:nth-child(3)").addEventListener("click", e => 
     removeHighlight();
     customInput.style.border="none";
     e.target.classList.add("clicked");
+    document.querySelector('#custom').value='';
     update();
 });
 document.querySelector(".tips div:nth-child(4)").addEventListener("click", e => {
@@ -112,6 +114,7 @@ document.querySelector(".tips div:nth-child(4)").addEventListener("click", e => 
     removeHighlight();
     customInput.style.border="none";
     e.target.classList.add("clicked");
+    document.querySelector('#custom').value='';
     update();
 });
 document.querySelector(".tips div:nth-child(5)").addEventListener("click", e => {
@@ -119,6 +122,7 @@ document.querySelector(".tips div:nth-child(5)").addEventListener("click", e => 
     removeHighlight();
     customInput.style.border="none";
     e.target.classList.add("clicked");
+    document.querySelector('#custom').value='';
     update();
 });
 
