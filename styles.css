@@ -14,6 +14,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 padding-top: 60px;
+    height:20 vh;
 }
 
 .main-container
@@ -23,7 +24,7 @@ padding-top: 60px;
     border-radius: 25px;
     margin: 40px auto;
     box-shadow: 1px 1px 50px hsl(184, 14%, 56%);
-    height: 430px;
+    height:70 vh;
     display: flex;
     justify-content:stretch; 
     align-items: center;
